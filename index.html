@@ -25,16 +25,21 @@
     <!-- External CSS link -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="font-manrope  ">
-    <header class="container mx-auto pt-12">
-      <div class="navbar">
+
+
+  <!-- ******************************************************************************* -->
+  <body class="font-manrope bg-gray-200 ">
+
+    <!-- Header Section Start -->
+    <header class="container mx-auto pt-12 ">
+      <div class="navbar flex flex-1 ">
         <button class="navbar-start space-x-2">
           <img class="cursor-pointer" src="images/arrow.png" alt="" />
           <a href="#" class="text-3xl font-extrabold cursor-pointer"
             >Rinterio</a
           >
         </button>
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center justify-end hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-[#737373]">
             <li class="hover:font-extrabold text-[#494949] text-[16px]"><a>Home</a></li>
             <li class="hover:font-extrabold text-[#494949] text-[16px]"><a>Services</a></li>
@@ -48,18 +53,19 @@
                 <a href="#"><i class="fa-solid fa-magnifying-glass p-[10px] bg-white border rounded-full"></i></a>
             <a href="#"><i class="fa-solid fa-cart-shopping p-[10px] bg-white border rounded-full"></i></a>
             </div>
-          <div class="flex space-x-2 py-3 px-5 bg-[#ABEF5F] rounded-full items-center">
+          <div class="flex space-x-2 py-3 px-5 bg-[#ABEF5F] rounded-full items-center cursor-pointer">
             <a class="font-extrabold text-xl">Book Consult</a>
           <img src="images/arrow_black.png" alt="" />
           </div>
         </div>
-        <div class="dropdown justify-end relative right-[-50px]">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <!-- Dropdown -->
+        <div class="dropdown dropdown-bottom dropdown-end justify-end relative md:right-[-200px] right-[-100px]">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-gray-50 border-2 border-gray-300 rounded-[50%]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
               fill="none"
-              viewBox="0  24 24"
+              viewBox="0 0 24 24"
               stroke="currentColor"
             >
               <path
@@ -72,7 +78,7 @@
           </div>
             <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-[110px] p-1 shadow text-[#737373]">
+                class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-1 shadow text-[#737373]">
                 <li class="hover:font-extrabold text-[#494949] bg-white"><a>Home</a></li>
                 <li class="hover:font-extrabold text-[#494949] bg-transparent"><a>Services</a></li>
                 <li class="hover:font-extrabold text-[#494949] bg-transparent"><a>Portfolio</a></li>
@@ -81,6 +87,23 @@
             </ul>
         </div>
       </div>
+      <!-- Banner Section Start -->
+       <section class="mt-10">
+        <div class="container text-center px-5 space-y-6">
+          <img class="mx-auto" src="images/banner.png" alt="">
+          <h1 class="font-extrabold text-6xl max-w-[1084px] mx-auto">A barn house of this design has a striking appearance</h1>
+          <P class="font-medium max-w-[970px] mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</P>
+          <button >
+            <a class="flex space-x-2 py-3 px-5 bg-[#ABEF5F] rounded-full items-center cursor-pointer" href="#">
+              <p>View Details</p>
+              <img src="images/arrow.png" alt="">
+
+            </a>
+          </button>
+        </div>
+       </section>
+
+
     </header>
 
     <main></main>
